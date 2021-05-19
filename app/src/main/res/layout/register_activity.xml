@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/in_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/terms_register"
+        android:layout_marginBottom="25dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:textAlignment="center"
+                android:text="INGRESE SU INFORMACIÓN"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_marginVertical="10px"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:hint="NOMBRE"
+                android:gravity="center"
+                android:maxLength="14"
+                android:textSize="20dp"
+                android:inputType="textLongMessage"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastname"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:hint="APELLIDOS"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:inputType="textLongMessage"
+                android:maxLength="14"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/correo"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:hint="CORREO"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:inputType="textLongMessage"
+                android:maxLength="14"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lugar"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:hint="Lugar"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:inputType="textLongMessage"
+                android:maxLength="14"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INDIQUE EL ROL"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/tecnico"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20px"
+                android:hint="Técnico"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:inputType="textLongMessage"
+                android:maxLength="14"/>
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/administrador"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20px"
+                android:hint="Administrador"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:inputType="textLongMessage"
+                android:maxLength="14"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contacto"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:hint="Celular"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:inputType="textLongMessage"
+                android:maxLength="14"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contra"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:hint="Contraseña"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:inputType="textLongMessage"
+                android:maxLength="14"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/register"
+                android:layout_marginHorizontal="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Registrarse"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Atras"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/terms_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp"
+        />
+
+</RelativeLayout>
